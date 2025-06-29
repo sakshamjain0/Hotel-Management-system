@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - HOTEL GRAND</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="reservation-page">
+    <header class="fade-in">
+        <h1>HOTEL GRAND</h1>
+        <p>Welcome to a luxurious stay!</p>
+    </header>
+
+    <nav>
+        <a href="home page.html">Home</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="services.html">Services</a>
+        <a href="house keeping.html">Housekeeping</a>
+        <a href="check in check out.html">Check In/Out</a>
+        <a href="billing.html">Billing</a>
+    </nav>
+
+    <div class="container fade-in">
+        <section id="reservation" class="slide-in">
+            <h2>Reservation</h2>
+            <form action="submit_reservation.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" name="room-type" required>
+                    <option value="">Select Room Type</option>
+                    <option value="standard">Standard Room</option>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="suite">Suite</option>
+                    <option value="presidential">Presidential Suite</option>
+                </select>
+
+                <label for="check-in">Check-in Date:</label>
+                <input type="date" id="check-in" name="check-in" required>
+
+                <label for="check-out">Check-out Date:</label>
+                <input type="date" id="check-out" name="check-out" required>
+
+                <label for="guests">Number of Guests:</label>
+                <select id="guests" name="guests" required>
+                    <option value="">Select Number of Guests</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5+">5+ Guests</option>
+                </select>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Any special requests or requirements..."></textarea>
+
+                <button type="submit" class="pulse">Submit Reservation</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 HOTEL GRAND. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+
+

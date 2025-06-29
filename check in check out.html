@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check-In & Check-Out - HOTEL GRAND</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="checkinout-page">
+    <header class="fade-in">
+        <h1>HOTEL GRAND</h1>
+        <p>Your Luxurious Stay</p>
+    </header>
+
+    <nav>
+        <a href="home page.html">Home</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="services.html">Services</a>
+        <a href="house keeping.html">Housekeeping</a>
+        <a href="check in check out.html">Check In/Out</a>
+        <a href="billing.html">Billing</a>
+    </nav>
+
+    <div class="container fade-in">
+        <section id="checkInOut" class="slide-in">
+            <h2>Check-In & Check-Out</h2>
+            <p>Manage your arrival and departure details with our streamlined check-in and check-out process.</p>
+            
+            <form action="submit_checkinout.php" method="post">
+                <label for="guestName">Guest Name:</label>
+                <input type="text" id="guestName" name="guestName" required placeholder="Enter your full name">
+
+                <label for="roomNumber">Room Number:</label>
+                <input type="text" id="roomNumber" name="roomNumber" required placeholder="Enter your room number">
+
+                <label for="checkInDate">Check-In Date & Time:</label>
+                <input type="datetime-local" id="checkInDate" name="checkInDate" required>
+
+                <label for="checkOutDate">Check-Out Date & Time:</label>
+                <input type="datetime-local" id="checkOutDate" name="checkOutDate" required>
+
+                <label for="specialRequests">Special Requests:</label>
+                <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Any special arrangements or requests..."></textarea>
+
+                <button type="submit" class="pulse">Submit Check-In/Out Details</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 HOTEL GRAND. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+
+

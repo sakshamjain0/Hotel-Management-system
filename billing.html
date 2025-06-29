@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing & Payment - HOTEL GRAND</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="billing-page">
+    <header class="fade-in">
+        <h1>HOTEL GRAND</h1>
+        <p>Your Luxurious Stay</p>
+    </header>
+
+    <nav>
+        <a href="home page.html">Home</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="services.html">Services</a>
+        <a href="house keeping.html">Housekeeping</a>
+        <a href="check in check out.html">Check In/Out</a>
+        <a href="billing.html">Billing</a>
+    </nav>
+
+    <div class="container fade-in">
+        <section id="billing" class="slide-in">
+            <h2>Billing & Payment</h2>
+            <p>View and manage your hotel expenses with our transparent billing system.</p>
+            
+            <form action="submit_billing.php" method="post">
+                <label for="guestName">Guest Name:</label>
+                <input type="text" id="guestName" name="guestName" required placeholder="Enter guest name">
+
+                <label for="roomNumber">Room Number:</label>
+                <input type="text" id="roomNumber" name="roomNumber" required placeholder="Enter room number">
+
+                <label for="checkInDate">Check-In Date:</label>
+                <input type="date" id="checkInDate" name="checkInDate" required>
+
+                <label for="checkOutDate">Check-Out Date:</label>
+                <input type="date" id="checkOutDate" name="checkOutDate" required>
+
+                <label for="roomRate">Room Rate (per night):</label>
+                <input type="number" id="roomRate" name="roomRate" required placeholder="Enter room rate">
+
+                <label for="additionalServices">Additional Services Used:</label>
+                <textarea id="additionalServices" name="additionalServices" rows="4" placeholder="List any additional services used during stay..."></textarea>
+
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="credit_card">Credit Card</option>
+                    <option value="debit_card">Debit Card</option>
+                    <option value="cash">Cash</option>
+                    <option value="bank_transfer">Bank Transfer</option>
+                    <option value="digital_wallet">Digital Wallet</option>
+                </select>
+
+                <button type="submit" class="pulse">Generate Bill</button>
+            </form>
+        </section>
+
+        <section id="billingInfo" class="slide-in">
+            <h3>Billing Information</h3>
+            <ul>
+                <li><strong>Room Charges:</strong> Calculated based on room type and duration of stay</li>
+                <li><strong>Service Charges:</strong> Additional services availed during your stay</li>
+                <li><strong>Taxes:</strong> Applicable government taxes and fees</li>
+                <li><strong>Early Check-out:</strong> No additional charges for early departure</li>
+                <li><strong>Late Check-out:</strong> Additional charges may apply after 12:00 PM</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 HOTEL GRAND. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+
